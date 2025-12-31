@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<title>منى حبيبتي</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Tahoma', sans-serif;
+        background: linear-gradient(to bottom, #fff0f5, #fde2ea);
+        overflow-x: hidden;
+        color: #6b2c3e;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-size: 36px;
+        color: #b03060;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 15px auto;
+        padding: 20px;
+        background: rgba(255,255,255,0.92);
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 2;
+    }
+
+    .photo {
+        width: 220px;
+        max-width: 80%;
+        border-radius: 50%;
+        margin: 15px auto;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .text {
+        font-size: 18px;
+        line-height: 1.9;
+        white-space: pre-line;
+        margin-top: 15px;
+    }
+
+    .signature {
+        margin-top: 25px;
+        font-size: 20px;
+        color: #8b1e3f;
+    }
+
+    .falling {
+        position: fixed;
+        top: -50px;
+        font-size: 22px;
+        animation: fall linear infinite;
+        z-index: 1;
+        opacity: 0.8;
+    }
+
+    @keyframes fall {
+        0% { transform: translateY(0) rotate(0deg); }
+        100% { transform: translateY(110vh) rotate(360deg); }
+    }
+
+    /* Mobile Optimization */
+    @media (max-width: 600px) {
+        h1 { font-size: 28px; }
+        .text { font-size: 16px; line-height: 1.8; }
+        .container { margin: 10px; padding: 15px; }
+        .photo { width: 180px; }
+    }
+</style>
+</head>
+<body>
+
+<h1>منى حبيبتي ❤️</h1>
+
+<div class="container">
+    <img src="https://i.postimg.cc/zvGLVS0F/photo-2025-12-31-21-12-42.jpg" alt="منى" class="photo" />
+
+    <div class="text">
+منى حبيبتي…
+بحبك ودي مش كلمه بتتقال عادي لاء،
+بحبك علشان قلبي ارتاح لما لقيك ❤️
+بحبك عشان انتي اكتر واحده حسيت معاها بالامان النفسي
+قلبي مرتاحلك وحبك من اول ماشوفتك من سنين
+كنت بتمناكي ولقيتك فجأه قدامي
+دعيت ربنا انه يرزقني رزق حلال وكانت النيه انتي الرزق الحلال
+انتي عوض سنين تعب وزعل
+جيتي مليتي حياتي بالفرحه وبالجمال
+حبيبتي دي اول سنه نبدأها مع بعض وبأذن الله باقي السنين هنكون مع بعض
+بس السنادي انا بدأتها بأعظم انتصار انا حققته
+اعظم انجاز في حياتي
+احلي حاجه اضافت لحياتي وهي انتي يا نور عيني
+كل سنه وانتي عمري
+كل سنه وانتي حياتي
+كل سنه وانتي نور عيني
+كل سنه وانتي روحي
+كل سنه وانتي كل حاجه حلوه
+كل سنه وانتي معايا يا عيوني
+ربنا يخليكي ليا وميحرمنيش منك ابدا يا حبيبتي
+    </div>
+
+    <div class="signature">حبيبك حسين 💖</div>
+</div>
+
+<script>
+    const icons = ['❤️','🌸','🌹','💐','💖'];
+    for (let i = 0; i < 40; i++) {
+        const span = document.createElement('span');
+        span.className = 'falling';
+        span.innerText = icons[Math.floor(Math.random() * icons.length)];
+        span.style.left = Math.random() * 100 + 'vw';
+        span.style.animationDuration = (5 + Math.random() * 5) + 's';
+        span.style.fontSize = (18 + Math.random() * 20) + 'px';
+        document.body.appendChild(span);
+    }
+</script>
+
+</body>
+</html>
